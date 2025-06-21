@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script src="/static/scripts.js"></script>
+</head>
+<body>
+    <!-- Vuln 51: CWE-79 - Cross-Site Scripting (XSS) -->
+    <h1>Login</h1>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+    <!-- Vuln 52: CWE-352 - Missing CSRF Token -->
+</body>
+</html>
